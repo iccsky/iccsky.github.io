@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>空气云</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-01-11T18:57:16.339Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Air</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown编辑器</title>
+    <link href="http://yoursite.com/2018/01/12/3/"/>
+    <id>http://yoursite.com/2018/01/12/3/</id>
+    <published>2018-01-11T18:42:15.000Z</published>
+    <updated>2018-01-11T18:57:16.339Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://oitxstie2.bkt.clouddn.com/hexo-github-6-1.png" alt=""><br>简介<br>MarkdownPad是Windows下的一个多功能Markdown编辑器。可以边编辑边预览（再也不用各种切换到浏览器上查看样式了），有可视化工具栏，有快捷键，可以很方便快捷的写出自己想要的博文。据说是windows平台上最好用的Markdown工具，没有之一。</p><p>安装<br><a href="http://markdownpad.com/download.html" target="_blank" rel="noopener">点击MarkdownPad下载安装</a>。MarkdownPad有免费版和专业版（好像没感觉出来免费版和专业版有什么区别），专业版需要激活码。<br>这里附上网上可用的激活码：</p><hr><p>邮箱：<br>Soar360@live.com</p><p>授权秘钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p><hr><p>安装到最后会有提示选择版本的，如果选free则不要输入激活码。</p><p>可能会出现的问题<br>MarkdownPad2在windows10系统下会出现无法预览的问题，需要安装官方提供的补丁，<a href="http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe" target="_blank" rel="noopener">Awesomium 1.6.6 SDK</a></p><p>windows7系统没有这个问题，可以不用安装补丁。<br>MarkdownPad编辑器很简洁，上手很快，基本上没有难度，也不用看什么教程，也不用配置什么，默认配置就可以了，如果还想挖掘MarkdownPad还有什么实用功能可以自己一个试一下，说不定会有什么发现。</p><p>MarkdownPad快捷键</p><blockquote><p>Bold(加粗)                    Ctrl+B</p><p>Emphasize(斜体)               Ctrl+I</p><p>Blockquote(引用)              Ctrl+Q</p><p>Code(代码)                    Ctrl+K</p><p>H1(h1标题)                    Ctrl+1</p><p>H2(h2标题)                    Ctrl+2</p><p>H3(h3标题)                    Ctrl+3</p><p>Link(链接)                    Ctrl+L</p><p>Image(图片)                   Ctrl+G</p><p>Unordered List(无序)          Ctrl+U</p><p>Ordered List(有序)            Ctrl+Shift+O</p><p>Timestamp(时间)               Ctrl+T</p><p>Horizontal Rule(分割线)       Ctrl+R</p></blockquote><p>熟悉这些快捷键的话，基本上不用到鼠标了，可以专注码字了。好了，MarkdownPad就介绍到这里。 </p><p>我的hexo博客：<a href="http://airyun.win" target="_blank" rel="noopener">http://airyun.win</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;http://oitxstie2.bkt.clouddn.com/hexo-github-6-1.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;简介&lt;br&gt;MarkdownPad是Windows下的一个多功能Markdown编辑器。可以边编辑边预览（再也不用各种切换到
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="编辑器" scheme="http://yoursite.com/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用hexo命令</title>
+    <link href="http://yoursite.com/2018/01/11/2/"/>
+    <id>http://yoursite.com/2018/01/11/2/</id>
+    <published>2018-01-10T20:57:20.000Z</published>
+    <updated>2018-01-10T21:24:50.808Z</updated>
+    
+    <content type="html"><![CDATA[<p>常见命令<br>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo generate #生成静态页面至public目录<br>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br>hexo deploy #部署到GitHub<br>hexo help  # 查看帮助<br>hexo version  #查看Hexo的版本</p><p>缩写：<br>hexo n == hexo new<br>hexo g == hexo generate<br>hexo s == hexo server<br>hexo d == hexo deploy</p><p>组合命令：<br>hexo s -g #生成并本地预览<br>hexo d -g #生成并上传</p><p>远程部署<br>打开git bash，输入hexo d就会将本次有改动的代码全部提交</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;常见命令&lt;br&gt;hexo new “postName” #新建文章&lt;br&gt;hexo new page “pageName” #新建页面&lt;br&gt;hexo generate #生成静态页面至public目录&lt;br&gt;hexo server #开启预览访问端口（默认端口4000，’
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="命令" scheme="http://yoursite.com/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+      <category term="部署" scheme="http://yoursite.com/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>好多资料都不在了</title>
+    <link href="http://yoursite.com/2018/01/11/1/"/>
+    <id>http://yoursite.com/2018/01/11/1/</id>
+    <published>2018-01-10T20:52:17.000Z</published>
+    <updated>2018-01-10T21:25:43.905Z</updated>
+    
+    <content type="html"><![CDATA[<p>搬瓦工重新装系统，<br>忘了备份数据，<br>结果~~~自己就是蠢到死！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;搬瓦工重新装系统，&lt;br&gt;忘了备份数据，&lt;br&gt;结果~~~自己就是蠢到死！&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="资料" scheme="http://yoursite.com/tags/%E8%B5%84%E6%96%99/"/>
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>折腾</title>
+    <link href="http://yoursite.com/2018/01/11/new/"/>
+    <id>http://yoursite.com/2018/01/11/new/</id>
+    <published>2018-01-10T20:45:18.000Z</published>
+    <updated>2018-01-10T21:25:59.105Z</updated>
+    
+    <content type="html"><![CDATA[<p>无意间发现了这个轻量博客，<br>自己试着弄了下看看效果，<br>搬瓦工一直在SS翻墙，流量不够用了！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;无意间发现了这个轻量博客，&lt;br&gt;自己试着弄了下看看效果，&lt;br&gt;搬瓦工一直在SS翻墙，流量不够用了！&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="折腾" scheme="http://yoursite.com/tags/%E6%8A%98%E8%85%BE/"/>
+    
+  </entry>
+  
+</feed>
