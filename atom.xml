@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-12T19:51:00.284Z</updated>
+  <updated>2018-01-14T17:53:42.319Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>到底要不要把这个HEXO搬走？</title>
+    <link href="http://yoursite.com/2018/01/15/5/"/>
+    <id>http://yoursite.com/2018/01/15/5/</id>
+    <published>2018-01-14T17:53:40.000Z</published>
+    <updated>2018-01-14T17:53:42.319Z</updated>
+    
+    <content type="html"><![CDATA[<p>GitHub，coding，，netlify，七牛，全都部署了，</p><p>前面3个速度方面有点问题，七牛有点傻，上传了还要手动刷新配置，</p><p>在线要不要搬迁到又拍云去呢？</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;GitHub，coding，，netlify，七牛，全都部署了，&lt;/p&gt;
+&lt;p&gt;前面3个速度方面有点问题，七牛有点傻，上传了还要手动刷新配置，&lt;/p&gt;
+&lt;p&gt;在线要不要搬迁到又拍云去呢？&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>next主题折腾</title>
@@ -32,34 +60,6 @@
         &lt;p&gt;对这个hexo还不熟悉，找了好多资料，折腾两个晚上了！&lt;/p&gt;
 &lt;p&gt;现在就先这样啦！~&lt;/p&gt;
 &lt;p&gt;后面会把找来的设置教程也发出来，让人少折腾！&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>到底要不要把这个HEXO搬走？</title>
-    <link href="http://yoursite.com/2018/01/13/5/"/>
-    <id>http://yoursite.com/2018/01/13/5/</id>
-    <published>2018-01-12T19:42:28.000Z</published>
-    <updated>2018-01-14T17:47:34.161Z</updated>
-    
-    <content type="html"><![CDATA[<p>GitHub，coding，，netlify，七牛，全都部署了，</p><p>前面3个速度方面有点问题，七牛有点傻，上传了还要手动刷新配置，</p><p>在线要不要搬迁到又拍云去呢？</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;GitHub，coding，，netlify，七牛，全都部署了，&lt;/p&gt;
-&lt;p&gt;前面3个速度方面有点问题，七牛有点傻，上传了还要手动刷新配置，&lt;/p&gt;
-&lt;p&gt;在线要不要搬迁到又拍云去呢？&lt;/p&gt;
 
       
     
