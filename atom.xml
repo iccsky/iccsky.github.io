@@ -45,6 +45,34 @@
   </entry>
   
   <entry>
+    <title>到底要不要把这个HEXO搬走？</title>
+    <link href="http://yoursite.com/2018/01/13/5/"/>
+    <id>http://yoursite.com/2018/01/13/5/</id>
+    <published>2018-01-12T19:42:28.000Z</published>
+    <updated>2018-01-14T17:47:34.161Z</updated>
+    
+    <content type="html"><![CDATA[<p>GitHub，coding，，netlify，七牛，全都部署了，</p><p>前面3个速度方面有点问题，七牛有点傻，上传了还要手动刷新配置，</p><p>在线要不要搬迁到又拍云去呢？</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;GitHub，coding，，netlify，七牛，全都部署了，&lt;/p&gt;
+&lt;p&gt;前面3个速度方面有点问题，七牛有点傻，上传了还要手动刷新配置，&lt;/p&gt;
+&lt;p&gt;在线要不要搬迁到又拍云去呢？&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Markdown编辑器</title>
     <link href="http://yoursite.com/2018/01/12/3/"/>
     <id>http://yoursite.com/2018/01/12/3/</id>
