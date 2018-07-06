@@ -2,6 +2,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
@@ -9,8 +18,11 @@
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
+
+
+
 
 
 
@@ -38,10 +50,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
 
 
 
@@ -50,44 +58,25 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="空气云" type="application/atom+xml" />
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
 
 
 
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="空气云">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="空气云">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="空气云">
 
 
 
@@ -96,15 +85,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '5.1.4',
+    version: '6.3.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -116,12 +103,35 @@
 </script>
 
 
+  
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="空气云">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="空气云">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="空气云">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="空气云" type="application/atom+xml" />
+
+
+
 
   <link rel="canonical" href="http://yoursite.com/"/>
 
 
 
-
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>空气云</title>
   
@@ -132,6 +142,34 @@
 
 
 
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
 </head>
 
@@ -145,26 +183,24 @@
   <div class="container sidebar-position-left 
   page-home">
     <div class="headband"></div>
-<a href="http://airyun.win/" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">空气云</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -172,65 +208,61 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home menu-item-active">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
+  </li>
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />Über</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />Tags</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />Kategorien</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />Archiv</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -238,12 +270,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -256,6 +296,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -266,7 +308,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Air">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://pdfan.cc/me.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -280,25 +322,40 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/15/8/" itemprop="url">不要太过分</a></h1>
+                <a class="post-title-link" href="/2018/05/15/8/" itemprop="url">
+                  不要太过分
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-15T02:40:02+08:00">
-                2018-05-15
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2018-05-15 02:40:02 / Updated at: 02:47:45" itemprop="dateCreated datePublished" datetime="2018-05-15T02:40:02+08:00">2018-05-15</time>
             
 
             
+              
 
+              
             
           </span>
 
@@ -311,14 +368,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">in</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/随笔/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
 
                 
                 
@@ -354,26 +407,20 @@
       
         
           
-          我不是SB，睁一只眼闭一只眼罢了！
-好自为之！
+            <p>我不是SB，睁一只眼闭一只眼罢了！</p>
+<p>好自为之！</p>
 
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/15/8/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
-    <div>
-    
-    </div>
+
     
 
     
@@ -406,6 +453,8 @@
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -418,7 +467,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Air">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://pdfan.cc/me.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -432,25 +481,40 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/24/6/" itemprop="url">轻松赚钱，轻松创业，开启躺赚模式！</a></h1>
+                <a class="post-title-link" href="/2018/01/24/6/" itemprop="url">
+                  轻松赚钱，轻松创业，开启躺赚模式！
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-24T00:11:42+08:00">
-                2018-01-24
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2018-01-24 00:11:42 / Updated at: 00:13:02" itemprop="dateCreated datePublished" datetime="2018-01-24T00:11:42+08:00">2018-01-24</time>
             
 
             
+              
 
+              
             
           </span>
 
@@ -463,14 +527,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">in</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/软件分享/" itemprop="url" rel="index">
-                    <span itemprop="name">软件分享</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软件分享/" itemprop="url" rel="index"><span itemprop="name">软件分享</span></a></span>
 
                 
                 
@@ -506,28 +566,26 @@
       
         
           
-          轻松赚钱，轻松创业，立即成为合伙人，开启躺赚模式：
-1.省赚双享：自用省钱，他用赚钱，买得越多，赚得越多
-2.平台大，渠道广：最全淘宝天猫商品库，全网价最低，QQ微信、朋友圈、 微博通通是流量
-3.永久高收益：只要你敢推，多级分销模式，无限代理裂变，助力收益涨幅更高更快速
-5.0风险，0库存，低门槛
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/24/6/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p><img src="http://oss1.lanlanlife.com/bdc67ca9c9d5048b108cd25381dfdf0c_550x750.jpg" alt=""><br>轻松赚钱，轻松创业，立即成为合伙人，开启躺赚模式：</p>
+<p>1.省赚双享：自用省钱，他用赚钱，买得越多，赚得越多</p>
+<p>2.平台大，渠道广：最全淘宝天猫商品库，全网价最低，QQ微信、朋友圈、 微博通通是流量</p>
+<p>3.永久高收益：只要你敢推，多级分销模式，无限代理裂变，助力收益涨幅更高更快速</p>
+<p>5.0风险，0库存，低门槛，操作简单：无需处理卖货、发货售后等繁琐步骤</p>
+<p>我们的优势你看得到，互联网时代+分享经济，已经错过2017的你还在等什么呢！</p>
+<p>搜索微信号<strong>iccsky</strong> (注明代理)</p>
+<p>加我QQ号<strong>4593904</strong> (注明代理)</p>
+
+          
         
       
     </div>
+
+    
+
     
     
     
-    <div>
-    
-    </div>
+
     
 
     
@@ -560,6 +618,8 @@
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -572,7 +632,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Air">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://pdfan.cc/me.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -586,25 +646,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/23/7/" itemprop="url">淘宝天猫购物优惠券</a></h1>
+                <a class="post-title-link" href="/2018/01/23/7/" itemprop="url">
+                  淘宝天猫购物优惠券
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-23T11:11:11+08:00">
-                2018-01-23
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2018-01-23 11:11:11" itemprop="dateCreated datePublished" datetime="2018-01-23T11:11:11+08:00">2018-01-23</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-01-24 00:21:24" itemprop="dateModified" datetime="2018-01-24T00:21:24+08:00">2018-01-24</time>
+              
             
           </span>
 
@@ -617,14 +704,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">in</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/软件分享/" itemprop="url" rel="index">
-                    <span itemprop="name">软件分享</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软件分享/" itemprop="url" rel="index"><span itemprop="name">软件分享</span></a></span>
 
                 
                 
@@ -660,30 +743,24 @@
       
         
           
-          现在有个 “好省” App非常火爆，里面的东西天天搞双十一，
-一年省个千把块不难，但App需要内部省钱口令才能激活，
-我这边搞到了一个口令  “空气优惠券” ，下面的链接可以注册激活：
-http://app.pdfan.cc/x/6200b1c4
-口令使用名额有限，先到先得！ 
-
+            <p>现在有个 “好省” App非常火爆，里面的东西天天搞双十一，</p>
+<p>一年省个千把块不难，但App需要内部省钱口令才能激活，</p>
+<p>我这边搞到了一个口令  “<strong>空气优惠券</strong>” ，下面的链接可以注册激活：</p>
+<p><a href="http://app.pdfan.cc/x/6200b1c4" target="_blank" rel="noopener">http://app.pdfan.cc/x/6200b1c4</a></p>
+<p>口令使用名额有限，先到先得！ </p>
+<p><img src="http://oss1.lanlanlife.com/ce5a60fddafda4716fe8b41637cc2ce7_250x250.jpg" alt=""></p>
 
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/23/7/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
-    <div>
-    
-    </div>
+
     
 
     
@@ -716,6 +793,8 @@ http://app.pdfan.cc/x/6200b1c4
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -728,7 +807,7 @@ http://app.pdfan.cc/x/6200b1c4
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Air">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://pdfan.cc/me.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -742,25 +821,40 @@ http://app.pdfan.cc/x/6200b1c4
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/15/5/" itemprop="url">到底要不要把这个HEXO搬走？</a></h1>
+                <a class="post-title-link" href="/2018/01/15/5/" itemprop="url">
+                  到底要不要把这个HEXO搬走？
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-15T01:53:40+08:00">
-                2018-01-15
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2018-01-15 01:53:40 / Updated at: 01:53:42" itemprop="dateCreated datePublished" datetime="2018-01-15T01:53:40+08:00">2018-01-15</time>
             
 
             
+              
 
+              
             
           </span>
 
@@ -773,14 +867,10 @@ http://app.pdfan.cc/x/6200b1c4
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">in</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
 
                 
                 
@@ -816,27 +906,21 @@ http://app.pdfan.cc/x/6200b1c4
       
         
           
-          GitHub，coding，，netlify，七牛，全都部署了，
-前面3个速度方面有点问题，七牛有点傻，上传了还要手动刷新配置，
-在线要不要搬迁到又拍云去呢？
+            <p>GitHub，coding，，netlify，七牛，全都部署了，</p>
+<p>前面3个速度方面有点问题，七牛有点傻，上传了还要手动刷新配置，</p>
+<p>在线要不要搬迁到又拍云去呢？</p>
 
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/15/5/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
-    <div>
-    
-    </div>
+
     
 
     
@@ -869,6 +953,8 @@ http://app.pdfan.cc/x/6200b1c4
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -881,7 +967,7 @@ http://app.pdfan.cc/x/6200b1c4
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Air">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://pdfan.cc/me.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -895,25 +981,40 @@ http://app.pdfan.cc/x/6200b1c4
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/13/4/" itemprop="url">next主题折腾</a></h1>
+                <a class="post-title-link" href="/2018/01/13/4/" itemprop="url">
+                  next主题折腾
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-13T03:42:28+08:00">
-                2018-01-13
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2018-01-13 03:42:28 / Updated at: 03:51:00" itemprop="dateCreated datePublished" datetime="2018-01-13T03:42:28+08:00">2018-01-13</time>
             
 
             
+              
 
+              
             
           </span>
 
@@ -926,14 +1027,10 @@ http://app.pdfan.cc/x/6200b1c4
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">in</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
 
                 
                 
@@ -969,27 +1066,21 @@ http://app.pdfan.cc/x/6200b1c4
       
         
           
-          对这个hexo还不熟悉，找了好多资料，折腾两个晚上了！
-现在就先这样啦！~
-后面会把找来的设置教程也发出来，让人少折腾！
+            <p>对这个hexo还不熟悉，找了好多资料，折腾两个晚上了！</p>
+<p>现在就先这样啦！~</p>
+<p>后面会把找来的设置教程也发出来，让人少折腾！</p>
 
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/13/4/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
-    <div>
-    
-    </div>
+
     
 
     
@@ -1022,6 +1113,8 @@ http://app.pdfan.cc/x/6200b1c4
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -1034,7 +1127,7 @@ http://app.pdfan.cc/x/6200b1c4
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Air">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://pdfan.cc/me.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1048,25 +1141,52 @@ http://app.pdfan.cc/x/6200b1c4
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/12/3/" itemprop="url">Markdown编辑器</a></h1>
+                <a class="post-title-link" href="/2018/01/12/3/" itemprop="url">
+                  Markdown编辑器
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-12T02:42:15+08:00">
-                2018-01-12
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2018-01-12 02:42:15" itemprop="dateCreated datePublished" datetime="2018-01-12T02:42:15+08:00">2018-01-12</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-01-13 03:28:24" itemprop="dateModified" datetime="2018-01-13T03:28:24+08:00">2018-01-13</time>
+              
             
           </span>
 
@@ -1079,14 +1199,10 @@ http://app.pdfan.cc/x/6200b1c4
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">in</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/软件分享/" itemprop="url" rel="index">
-                    <span itemprop="name">软件分享</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软件分享/" itemprop="url" rel="index"><span itemprop="name">软件分享</span></a></span>
 
                 
                 
@@ -1122,25 +1238,46 @@ http://app.pdfan.cc/x/6200b1c4
       
         
           
-          简介MarkdownPad是Windows下的一个多功能Markdown编辑器。可以边编辑边预览（再也不用各种切换到浏览器上查看样式了），有可视化工具栏，有快捷键，可以很方便快捷的写出自己想要的博文。据说是windows平台上最好用的Markdown工具，没有之一。
-安装点击MarkdownPad下
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/12/3/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p><img src="http://oitxstie2.bkt.clouddn.com/hexo-github-6-1.png" alt=""><br>简介<br>MarkdownPad是Windows下的一个多功能Markdown编辑器。可以边编辑边预览（再也不用各种切换到浏览器上查看样式了），有可视化工具栏，有快捷键，可以很方便快捷的写出自己想要的博文。据说是windows平台上最好用的Markdown工具，没有之一。</p>
+<p>安装<br><a href="http://markdownpad.com/download.html" target="_blank" rel="noopener">点击MarkdownPad下载安装</a>。MarkdownPad有免费版和专业版（好像没感觉出来免费版和专业版有什么区别），专业版需要激活码。<br>这里附上网上可用的激活码：</p>
+<hr>
+<p>邮箱：<br>Soar360@live.com</p>
+<p>授权秘钥：</p>
+<p>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5Q<br>aaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUp<br>TtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb<br>/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+<hr>
+<p>安装到最后会有提示选择版本的，如果选free则不要输入激活码。</p>
+<p>可能会出现的问题<br>MarkdownPad2在windows10系统下会出现无法预览的问题，需要安装官方提供的补丁，<a href="http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe" target="_blank" rel="noopener">Awesomium 1.6.6 SDK</a></p>
+<p>windows7系统没有这个问题，可以不用安装补丁。<br>MarkdownPad编辑器很简洁，上手很快，基本上没有难度，也不用看什么教程，也不用配置什么，默认配置就可以了，如果还想挖掘MarkdownPad还有什么实用功能可以自己一个试一下，说不定会有什么发现。</p>
+<h2 id="MarkdownPad快捷键"><a href="#MarkdownPad快捷键" class="headerlink" title="MarkdownPad快捷键"></a>MarkdownPad快捷键</h2><blockquote>
+<p>Bold(加粗)                    Ctrl+B</p>
+<p>Emphasize(斜体)               Ctrl+I</p>
+<p>Blockquote(引用)              Ctrl+Q</p>
+<p>Code(代码)                    Ctrl+K</p>
+<p>H1(h1标题)                    Ctrl+1</p>
+<p>H2(h2标题)                    Ctrl+2</p>
+<p>H3(h3标题)                    Ctrl+3</p>
+<p>Link(链接)                    Ctrl+L</p>
+<p>Image(图片)                   Ctrl+G</p>
+<p>Unordered List(无序)          Ctrl+U</p>
+<p>Ordered List(有序)            Ctrl+Shift+O</p>
+<p>Timestamp(时间)               Ctrl+T</p>
+<p>Horizontal Rule(分割线)       Ctrl+R</p>
+</blockquote>
+<hr>
+<p>熟悉这些快捷键的话，基本上不用到鼠标了，可以专注码字了。好了，MarkdownPad就介绍到这里。 </p>
+<p>我的hexo博客：<a href="http://airyun.win" target="_blank" rel="noopener">http://airyun.win</a></p>
+
+          
         
       
     </div>
+
+    
+
     
     
     
-    <div>
-    
-    </div>
+
     
 
     
@@ -1173,6 +1310,8 @@ http://app.pdfan.cc/x/6200b1c4
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -1185,7 +1324,7 @@ http://app.pdfan.cc/x/6200b1c4
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Air">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://pdfan.cc/me.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1199,25 +1338,52 @@ http://app.pdfan.cc/x/6200b1c4
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/11/2/" itemprop="url">常用hexo命令</a></h1>
+                <a class="post-title-link" href="/2018/01/11/2/" itemprop="url">
+                  常用hexo命令
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-11T04:57:20+08:00">
-                2018-01-11
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2018-01-11 04:57:20" itemprop="dateCreated datePublished" datetime="2018-01-11T04:57:20+08:00">2018-01-11</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-01-13 03:28:15" itemprop="dateModified" datetime="2018-01-13T03:28:15+08:00">2018-01-13</time>
+              
             
           </span>
 
@@ -1230,14 +1396,10 @@ http://app.pdfan.cc/x/6200b1c4
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">in</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
 
                 
                 
@@ -1273,24 +1435,22 @@ http://app.pdfan.cc/x/6200b1c4
       
         
           
-          常见命令hexo new “postName” #新建文章hexo new page “pageName” #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）hexo deploy
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/11/2/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p>常见命令<br>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo generate #生成静态页面至public目录<br>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br>hexo deploy #部署到GitHub<br>hexo help  # 查看帮助<br>hexo version  #查看Hexo的版本</p>
+<p>缩写：<br>hexo n == hexo new<br>hexo g == hexo generate<br>hexo s == hexo server<br>hexo d == hexo deploy</p>
+<p>组合命令：<br>hexo s -g #生成并本地预览<br>hexo d -g #生成并上传</p>
+<p>远程部署<br>打开git bash，输入hexo d就会将本次有改动的代码全部提交</p>
+
+          
         
       
     </div>
+
+    
+
     
     
     
-    <div>
-    
-    </div>
+
     
 
     
@@ -1323,6 +1483,8 @@ http://app.pdfan.cc/x/6200b1c4
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -1335,7 +1497,7 @@ http://app.pdfan.cc/x/6200b1c4
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Air">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://pdfan.cc/me.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1349,25 +1511,52 @@ http://app.pdfan.cc/x/6200b1c4
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/11/1/" itemprop="url">好多资料都不在了</a></h1>
+                <a class="post-title-link" href="/2018/01/11/1/" itemprop="url">
+                  好多资料都不在了
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-11T04:52:17+08:00">
-                2018-01-11
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2018-01-11 04:52:17" itemprop="dateCreated datePublished" datetime="2018-01-11T04:52:17+08:00">2018-01-11</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-01-13 03:27:29" itemprop="dateModified" datetime="2018-01-13T03:27:29+08:00">2018-01-13</time>
+              
             
           </span>
 
@@ -1380,14 +1569,10 @@ http://app.pdfan.cc/x/6200b1c4
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">in</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/随笔/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
 
                 
                 
@@ -1423,25 +1608,19 @@ http://app.pdfan.cc/x/6200b1c4
       
         
           
-          搬瓦工重新装系统，忘了备份数据，结果~~~自己就是蠢到死！
+            <p>搬瓦工重新装系统，<br>忘了备份数据，<br>结果~~~自己就是蠢到死！</p>
 
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/11/1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
-    <div>
-    
-    </div>
+
     
 
     
@@ -1476,6 +1655,8 @@ http://app.pdfan.cc/x/6200b1c4
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -1486,7 +1667,7 @@ http://app.pdfan.cc/x/6200b1c4
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Air">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://pdfan.cc/me.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1500,25 +1681,52 @@ http://app.pdfan.cc/x/6200b1c4
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/11/0/" itemprop="url">折腾</a></h1>
+                <a class="post-title-link" href="/2018/01/11/0/" itemprop="url">
+                  折腾
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-11T04:45:18+08:00">
-                2018-01-11
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2018-01-11 04:45:18" itemprop="dateCreated datePublished" datetime="2018-01-11T04:45:18+08:00">2018-01-11</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-01-13 03:27:09" itemprop="dateModified" datetime="2018-01-13T03:27:09+08:00">2018-01-13</time>
+              
             
           </span>
 
@@ -1531,14 +1739,10 @@ http://app.pdfan.cc/x/6200b1c4
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">in</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/随笔/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
 
                 
                 
@@ -1574,25 +1778,19 @@ http://app.pdfan.cc/x/6200b1c4
       
         
           
-          无意间发现了这个轻量博客，自己试着弄了下看看效果，搬瓦工一直在SS翻墙，流量不够用了！
+            <p>无意间发现了这个轻量博客，<br>自己试着弄了下看看效果，<br>搬瓦工一直在SS翻墙，流量不够用了！</p>
 
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/11/0/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
-    <div>
-    
-    </div>
+
     
 
     
@@ -1627,9 +1825,6 @@ http://app.pdfan.cc/x/6200b1c4
           </div>
           
 
-
-          
-
         </div>
         
           
@@ -1654,50 +1849,76 @@ http://app.pdfan.cc/x/6200b1c4
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="https://pdfan.cc/me.jpg"
-                alt="Air" />
-            
               <p class="site-author-name" itemprop="name">Air</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
-          <nav class="site-state motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives">
+                
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">Artikel</span>
+                  </a>
+                </div>
+              
 
-            
-              <div class="site-state-item site-state-posts">
               
-                <a href="/archives">
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">Kategorien</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">9</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">Tags</span>
+                  </a>
+                </div>
               
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
+            </nav>
+          
 
           
             <div class="feed-link motion-element">
@@ -1716,6 +1937,9 @@ http://app.pdfan.cc/x/6200b1c4
           
           
 
+          
+            
+          
           
 
         </div>
@@ -1736,16 +1960,20 @@ http://app.pdfan.cc/x/6200b1c4
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Air</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.4.4</div>
 
 
 
@@ -1753,12 +1981,13 @@ http://app.pdfan.cc/x/6200b1c4
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a> v6.3.0</div>
 
 
 
 
         
+
 
 
 
@@ -1797,7 +2026,11 @@ http://app.pdfan.cc/x/6200b1c4
 
 
 
-  
+
+
+
+
+
 
 
 
@@ -1817,16 +2050,6 @@ http://app.pdfan.cc/x/6200b1c4
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -1835,18 +2058,13 @@ http://app.pdfan.cc/x/6200b1c4
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
 
 
 
@@ -1858,15 +2076,11 @@ http://app.pdfan.cc/x/6200b1c4
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
 
 
 
   
-
-
-  
-
 
 
 
@@ -1893,8 +2107,6 @@ http://app.pdfan.cc/x/6200b1c4
 
 
 
-
-
   
 
 
@@ -1908,6 +2120,12 @@ http://app.pdfan.cc/x/6200b1c4
   
 
   
+
+  
+  
+
+  
+
   
 
   
@@ -1918,5 +2136,3 @@ http://app.pdfan.cc/x/6200b1c4
 
 </body>
 </html>
-<!-- 页面点击小红心 -->
-<script type="text/javascript" src="/js/src/love.js"></script>
